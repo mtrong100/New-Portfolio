@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 26% 6%;
+    --foreground: 180 5% 96%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 180 5% 96%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 180 5% 96%;
+
+    --primary: 176 75% 52%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 18% 14%;
+    --secondary-foreground: 180 5% 96%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 180 5% 65%;
+
+    --accent: 34 100% 60%;
+    --accent-foreground: 220 26% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 5% 96%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 176 75% 52%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(176 75% 52%) 0%, hsl(176 75% 42%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(34 100% 60%) 0%, hsl(34 100% 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 26% 6%) 0%, hsl(220 20% 10%) 100%);
+    
+    --shadow-glow: 0 0 40px hsl(176 75% 52% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
