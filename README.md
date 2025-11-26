@@ -2,8 +2,6 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/4879eb17-a9b0-4536-9c88-1676313e49cf
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
